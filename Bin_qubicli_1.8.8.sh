@@ -3,11 +3,12 @@
 echo "deb http://cz.archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list
 apt update
 apt install libc6 -y
-mkdir ~/qubic
-cd ~/qubic
+cd ~
+mkdir qubic
+cd qubic
 wget https://dl.qubic.li/downloads/qli-Client-1.8.8-Linux-x64.tar.gz
 tar xvzf qli-Client-1.8.8-Linux-x64.tar.gz
-cd ~/qubic
+
 
 cat <<EOF > appsettings.json
 {
@@ -23,8 +24,6 @@ cat <<EOF > appsettings.json
   }
 }
 EOF
-
-cd ~/qubic 
 
 screen -dmS qubic ./qli-Client
 
