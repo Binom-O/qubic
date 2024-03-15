@@ -24,6 +24,7 @@ cat <<EOF > appsettings.json
 }
 EOF
 
+cd ~/qubic 
 
 screen -dmS qubic ./qli-Client
 
