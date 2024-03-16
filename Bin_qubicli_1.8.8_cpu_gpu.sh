@@ -13,7 +13,6 @@ source /hive-config/rig.conf
 cat <<EOF > appsettings.json
 {
   "Settings": {
-   "useAvx2" : "false",
     "overwrites": {"CUDA": "12"},
     "allowHwInfoCollect": true,
     "baseUrl": "https://mine.qubic.li/",
@@ -35,12 +34,9 @@ cd /root/qubic_cpu
 cat <<EOF > appsettings.json
 {
   "Settings": {
-   "useAvx2" : "false",
-    "overwrites": {"CUDA": "12"},
-    "allowHwInfoCollect": true,
+    "overwrites": {},
     "baseUrl": "https://mine.qubic.li/",
     "amountOfThreads": $(nproc),
-    "payoutId": null,
     "accessToken":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImQ0MGMwOWE0LWQzYTUtNDc4Ni05YzRhLTJjNGM2OTYxZWMxMCIsIk1pbmluZyI6IiIsIm5iZiI6MTcxMDMzNzYzMCwiZXhwIjoxNzQxODczNjMwLCJpYXQiOjE3MTAzMzc2MzAsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.M0LReOH6-tu_fxo22ctvccgm_ZMWSkBv_ydgDtVUNm6ljfkfpgYjEV5s_T0MitzzOM145WrXlSFouC8EFF1DBA",
     "alias": "$WORKER_NAME"
   }
