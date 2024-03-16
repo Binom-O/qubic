@@ -3,7 +3,7 @@
 echo "deb http://cz.archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list
 apt update
 apt install libc6 -y
-cd ~
+cd /root
 mkdir qubic
 cd qubic
 wget https://dl.qubic.li/downloads/qli-Client-1.8.8-Linux-x64.tar.gz
@@ -13,7 +13,6 @@ source /hive-config/rig.conf
 cat <<EOF > appsettings.json
 {
   "Settings": {
-   "useAvx2" : "false",
     "overwrites": {"CUDA": "12"},
     "allowHwInfoCollect": true,
     "baseUrl": "https://mine.qubic.li/",
@@ -26,5 +25,3 @@ cat <<EOF > appsettings.json
 EOF
 
 screen -dmS qubic ./qli-Client
-
-screen -r qubic
