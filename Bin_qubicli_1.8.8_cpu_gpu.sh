@@ -6,8 +6,8 @@ apt install libc6 -y
 cd /root
 mkdir qubic
 cd qubic
-wget https://dl.qubic.li/downloads/qli-Client-1.8.8-Linux-x64.tar.gz
-tar xvzf qli-Client-1.8.8-Linux-x64.tar.gz
+wget https://dl.qubic.li/downloads/qli-Client-1.8.9-Linux-x64.tar.gz
+tar xvzf qli-Client-1.8.9-Linux-x64.tar.gz
 source /hive-config/rig.conf
 
 cat <<EOF > appsettings.json
