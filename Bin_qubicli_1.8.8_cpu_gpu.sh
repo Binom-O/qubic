@@ -19,7 +19,7 @@ cat <<EOF > appsettings.json
     "amountOfThreads": 1,
     "payoutId": null,
     "accessToken":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImQ0MGMwOWE0LWQzYTUtNDc4Ni05YzRhLTJjNGM2OTYxZWMxMCIsIk1pbmluZyI6IiIsIm5iZiI6MTcxMDMzNzYzMCwiZXhwIjoxNzQxODczNjMwLCJpYXQiOjE3MTAzMzc2MzAsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.M0LReOH6-tu_fxo22ctvccgm_ZMWSkBv_ydgDtVUNm6ljfkfpgYjEV5s_T0MitzzOM145WrXlSFouC8EFF1DBA",
-    "alias": "${WORKER_NAME}_cpu"
+    "alias": "$WORKER_NAME"
   }
 }
 EOF
@@ -38,7 +38,7 @@ cat <<EOF > appsettings.json
     "baseUrl": "https://mine.qubic.li/",
     "amountOfThreads": $(nproc),
     "accessToken":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImQ0MGMwOWE0LWQzYTUtNDc4Ni05YzRhLTJjNGM2OTYxZWMxMCIsIk1pbmluZyI6IiIsIm5iZiI6MTcxMDMzNzYzMCwiZXhwIjoxNzQxODczNjMwLCJpYXQiOjE3MTAzMzc2MzAsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.M0LReOH6-tu_fxo22ctvccgm_ZMWSkBv_ydgDtVUNm6ljfkfpgYjEV5s_T0MitzzOM145WrXlSFouC8EFF1DBA",
-    "alias": "$WORKER_NAME" + "_cpu"
+    "alias": "${WORKER_NAME}_cpu"
   }
 }
 EOF
