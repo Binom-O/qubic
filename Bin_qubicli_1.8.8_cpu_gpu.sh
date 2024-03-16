@@ -3,7 +3,7 @@
 echo "deb http://cz.archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list
 apt update
 apt install libc6 -y
-cd ~
+cd /root
 mkdir qubic
 cd qubic
 wget https://dl.qubic.li/downloads/qli-Client-1.8.8-Linux-x64.tar.gz
