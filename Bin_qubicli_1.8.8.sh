@@ -24,5 +24,5 @@ cat <<EOF > appsettings.json
 }
 EOF
 
-screen -L -Logfile qub.log -dmS qubic /root/qubic/qli-Client
+screen -L -Logfile /root/qubic/qub.log -dmS qubic /root/qubic/qli-Client
 ldd --version
